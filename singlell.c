@@ -14,10 +14,9 @@ void add(int num)
 
 	temp =(struct node*)malloc(sizeof(struct node));
 	temp->data=num;
-		if(head==NULL)
+	if(head==NULL)
 	{
-		temp->next=head;
-		right = head;
+		temp->next=NULL;
 		head =temp;
 		c++;
 	}
