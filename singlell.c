@@ -49,7 +49,8 @@ void display()
 	else
 	{
 		right=head;
-		for(int i=1;i<=c;i++)
+		int i;
+		for(i=1;i<=c;i++)  //for loop intital declarations are only allowed in c11 and c99 
 		{
 			printf("%d\t",right->data);
 			right=right->next;
@@ -65,7 +66,8 @@ void delete()
 	c--;
 	struct node *right;
 	right=head;
-	for(int i=1;i<c;i++)
+	int i;
+	for(i=1;i<c;i++) // for loop intial initilisation allowed only in c11 and c99
 	{
 		right=right->next;
 	}
